@@ -1,0 +1,111 @@
+* {
+  padding: 1.5px;
+  margin: 1px;
+}
+/*---------HEADER------------------*/
+.heder {
+  background-color: white;
+}
+/* NAVBAR*/
+.header__navbar ul {
+  padding: 2rem;
+  list-style-type: none;
+}
+.header__navbar li {
+  display: inline-block;
+}
+.header__navbar a {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+  font-size: 1.2rem;
+  background-color: deeppink;
+  padding: 1.1rem;
+  font-family: fantasy;
+  list-style-type: none;
+}
+/*CONTENIDO*/
+.section__contenido {
+  background-color: white;
+  padding: 2.1rem;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  text-align: justify;
+  list-style-type: none;
+}
+
+.img__locales img {
+  width: 30%;
+  padding: 2rem;
+}
+
+.img__l img {
+  width: 20%;
+  padding: 2rem;
+}
+/*FOOTER*/
+.footer {
+  background-color: #f11080d7;
+  color: black;
+  padding: 1rem;
+}
+.footer__flex {
+  display: flex;
+  justify-content: space-around;
+}
+.footer__menu {
+  list-style-type: none;
+  text-align: center;
+}
+.footer__menu a {
+  color: black;
+  text-decoration: none;
+}
+.footer__credito {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+.btn {
+  box-sizing: border-box;
+  border: 2px solido rgb(189, 91, 153);
+  background-color: rgb(255, 86, 193);
+  color: black;
+  border-radius: 3rem;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: large;
+  margin: 1rem;
+  padding: 1.2rem 2rem;
+  text-transform: uppercase;
+}
+
+#grilla {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "productos productos publicidad"
+    "footer footer footer";
+  grid-template-rows: 100px 1fr 1fr 75px;
+  grid-template-columns: 30% auto 15%;
+  grid-row-gap: 20px;
+  grid-column-gap: 30px;
+  height: 100vh;
+}
+.border {
+  border: 1px solid rgb(255, 255, 255);
+}
+header {
+  background-color: rgb(255, 255, 255);
+  grid-area: header;
+}
+footer {
+  background-color: deeppink;
+  grid-area: footer;
+}
+section#productos {
+  background-color: rgb(255, 255, 255);
+  grid-area: productos;
+}
